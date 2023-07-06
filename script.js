@@ -10,7 +10,12 @@ function renderGroceries() {
   groceryList.innerHTML = '';
   for (let i = 0; i < groceries.length; i++) {
     let li = document.createElement('li');
-    li.textContent = groceries[i];
+    let checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    let label = document.createElement('label');
+    label.textContent = groceries[i];
+    li.appendChild(checkbox);
+    li.appendChild(label);
     groceryList.appendChild(li);
   }
 }
