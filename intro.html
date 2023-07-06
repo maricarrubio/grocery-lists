@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+</head>
+<body>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    
+    <h1 id="intro-heading">Introduction to JS</h1>
+
+    
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name"/>
+    <button onclick="greetHuman();">Greet</button>
+    <button onclick="goodbyeHuman();">Goodbye</button>
+    
+    <script>
+        // alert('Embedded JavaScript');
+
+function greetHuman() {
+    const firstName = document.getElementById('first-name').value;
+    alert(`Greetings ${firstName}`);
+}
+
+function goodbyeHuman() {
+    const firstName = document.getElementById('first-name').value;
+    alert(`Goodbye ${firstName}`);
+}
+
+    </script>
+    <script src="./intro.js"></script>
+</body>
+</html>
